@@ -422,7 +422,6 @@ a[class*="title"]:hover {
 
 
 .hs-sep .border {
-  content: '';
   width: 60%;
   height: 1px;
   background: var(--pc);
@@ -1093,11 +1092,6 @@ footer .menu-search-form .hs-btn {
   padding: 5px;
 }
 
-footer .menu li {
-  margin-bottom: 10px;
-}
-
-
 
 footer .flex-between:has(.hs-social-links) {
   padding-block: 30px;
@@ -1106,12 +1100,16 @@ footer .flex-between:has(.hs-social-links) {
 }
 
 
-.newsletter {
-  gap: 10px;
+footer [class*='grid'] {
+  gap: 15px !important;
 }
 
 .copywrite {
   text-align: center;
+}
+
+footer .hs-timline {
+  gap: 10px;
 }
 
 .fo-sep {
@@ -1447,6 +1445,9 @@ footer .flex-between:has(.hs-social-links) {
     padding-bottom: 40px;
   }
 
+  .hs-con-hero .grid:has(.hs-card) {
+    order: 2;
+  }
 
 
 
@@ -1485,9 +1486,7 @@ footer .flex-between:has(.hs-social-links) {
     width: 50% !important;
   }
 
-  .hero-content {
-    width: 100% !important;
-  }
+
 
   .flex-between:has(.hs-sep, .hs-btn) {
     margin-bottom: 30px;
@@ -1496,7 +1495,7 @@ footer .flex-between:has(.hs-social-links) {
     gap: 20px;
   }
 
-  .hs-con-blog .grid-20 {
+  .hs-con-hero .grid-20 {
     grid-template-columns: 20% auto !important;
   }
 
