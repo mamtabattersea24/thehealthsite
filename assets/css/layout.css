@@ -91,11 +91,11 @@ figure {
   list-style-type: square;
 }
 
-.all-page :is(ul, ol):not([class*='social-links'] ul) {
+.all-page :is(ul, ol):not(.auth-social-follow ul, [class*='social-links'] ul) {
   padding-left: 1.5rem;
 }
 
-.all-page :is(ul, ol, p, .hs-toc-wrap, .wp-block-image):not([class*='social-links'] ul) {
+.all-page :is(ul, ol, p, .wp-block-image):not([class*='social-links'] ul) {
   margin-bottom: 20px;
 }
 
@@ -715,6 +715,10 @@ header .container,
   margin-bottom: 0 !important;
 }
 
+.hs-toc-wrap:has(.hidden) {
+  margin-bottom: 60px;
+}
+
 /* Blog Contents _____________start */
 
 /* blockquote */
@@ -727,10 +731,10 @@ blockquote {
 blockquote:before {
   width: 55px;
   height: 65px;
-  content: "";
+  content: "“";
   position: absolute;
   opacity: .2;
-  top: 22px;
+  top: -40px;
 }
 
 
@@ -814,11 +818,15 @@ table tr th {
 
 
 .hs-block-faq summary::after {
-  content: "";
+  content: "<";
   width: 36px;
   height: 36px;
   margin-left: auto;
   flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: -90deg;
 }
 
 
