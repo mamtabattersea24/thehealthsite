@@ -154,7 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function toggleTableOfContent() {
     tocBody.classList.toggle("hidden");
-    tocHeader.classList.toggle('head-border');
     tocToggleBtn.innerHTML = tocBody.classList.contains("hidden") ? plus : minus;
   }
 
